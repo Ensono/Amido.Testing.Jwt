@@ -25,18 +25,18 @@ Library to simplify the creation of JWT tokens
 
 |Parameter		|	Description														| Example / Default 								   |
 |---------------|-------------------------------------------------------------------|------------------------------------------------------|
--Issuer			|	The trusted issuer with which the token will be created with    |
--Audience		|	The trusted audience for which the token will be used with      |
--Thumbprint		|	The thumbprint of the certificate to sign the token with        |
--StoreName		|	The store name of the certificate to sign the token with		|	Possible Values include "My", "Root"
--StoreLocation	|	The store location of the certificate to sign the token with	|	Possible Values include "LocalMachine", "CurrentUser"
+Issuer			|	The trusted issuer with which the token will be created with    |
+Audience		|	The trusted audience for which the token will be used with      |
+Thumbprint		|	The thumbprint of the certificate to sign the token with        |
+StoreName		|	The store name of the certificate to sign the token with		|	Possible Values include "My", "Root"
+StoreLocation	|	The store location of the certificate to sign the token with	|	Possible Values include "LocalMachine", "CurrentUser"
 
 
 ####Optional
 
 |Parameter		|	Description														| Example / Default 								   					|
 |---------------|-------------------------------------------------------------------|-----------------------------------------------------------------------|
--Base64			|	Base64 encode the resulting token								|	Default is true
--CreatedDate	|	The date in which the token is not valid before					|	Default UtcNow - 24 Hours
--ExpiryDate		|	The date in which the token will expire							|	Default	UtcNow + 24 hours
--Claims			|	A Json Collection of the claims to include within the token		|	Example: -Claims "{'CustomerId':'12345','Email':'jwt@amido.com'}"
+Base64			|	Base64 encode the resulting token								|	Default is true
+CreatedDate		|	The date in which the token is not valid before					|	Default UtcNow - 24 Hours
+ExpiryDate		|	The date in which the token will expire							|	Default	UtcNow + 24 hours
+Claims			|	A Json Collection of the claims to include within the token		|	Example: -Claims "{'CustomerId':'12345','Email':'jwt@amido.com'}"
